@@ -1,5 +1,7 @@
 import unittest
-from main import calculate_sum_and_average, get_numbers_from_user
+
+from main import calculate_sum_and_average
+
 
 class TestCalculateFunctions(unittest.TestCase):
 
@@ -19,5 +21,6 @@ class TestCalculateFunctions(unittest.TestCase):
         with self.assertRaises(ValueError):
             calculate_sum_and_average(["a", "b", "c"])
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
