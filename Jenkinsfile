@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'for-testing-ci'
-    }
+    agent any
 
     parameters {
         choice(name: 'RUN_TEST', choices: ['Yes', 'No'], description: 'Yes: unittest + coverage report; No: unittest only')
